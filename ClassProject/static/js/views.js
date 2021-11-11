@@ -103,7 +103,7 @@ var sketch2D = function (p5) {
         _elementList.push(new _currentElementClass(_currentPointList));
         _currentPointList = [];
       }
-
+      _table.refresh();
     }
 
     p5.lastpoint = { "x": p5.mouseX, "y": p5.mouseY };  // save last point
@@ -149,6 +149,7 @@ var sketch2D = function (p5) {
       }
     }
 
+    _table.refresh();
   //!Class: your 2D keyPressed functionality here
 
 
@@ -161,7 +162,7 @@ var sketch2D = function (p5) {
 
   /////////////////////   2D drawGrid() function     ////////////////////////
   p5.drawGrid = function() {
-    console.log('drawGrid');
+    //console.log('drawGrid');
     p5.stroke(50);
     p5.strokeWeight(2);
     for (var i = 0; i < p5.width ; i += _xGrid) {

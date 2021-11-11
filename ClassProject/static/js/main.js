@@ -1,8 +1,8 @@
-  // Function onLoad is where any preliminary setup happens
+// Function onLoad is where any preliminary setup happens
 function onLoad() {
 
-  _2DView = new View2D(); 
-  _3DView = new View3D(); 
+  _2DView = new View2D();
+  _3DView = new View3D();
 
 
   //!Class: your onLoad() setup functions here
@@ -14,9 +14,13 @@ function onLoad() {
   _human3D = _2DView.p5.loadModel('media/human3D.obj', false);
   _human2D = _3DView.p5.loadImage('media/human2D.png');
 
-  
-  var anElement = new EllipseOnePointElement([{x:100, y: 100, z:0}]);
+
+  var anElement = new EllipseOnePointElement([{ x: 100, y: 100, z: 0 }]);
   _elementList.push(anElement);
+
+  // Data Table stuff
+  _table = new DataTable("DataTableDIV", _elementList, _tableSpec);
+  _table.refresh();
 
 
 
