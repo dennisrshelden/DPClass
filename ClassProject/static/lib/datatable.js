@@ -73,7 +73,7 @@ class DataTable {
         }
         atext += "</table>";
         myDiv.innerHTML = atext;
-        //console.log(atext);
+        console.log(atext);
     }
 
     deleteObject(anIndex) {

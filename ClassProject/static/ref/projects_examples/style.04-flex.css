@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+
+.Canvas2DStyle, .Canvas3DStyle, .ControlsStyle, .TableStyle {
+  border: 1px solid  darkblue;
+  height: 400px;
+  width: 500px;
+
+
+}
+
+
+.Canvas2DStyle {
+
+
+}
+
+
+.Canvas3DStyle {
+
+
+}
+
+
+.ControlsStyle {
+  height:200px;
+  overflow: scroll;
+
+
+}
+
+
+.TableStyle {
+  height:400px;
+  overflow: scroll;
+}
+
+
+
+

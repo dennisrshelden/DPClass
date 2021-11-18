@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+
+.Canvas2DStyle, .Canvas3DStyle, .ControlsStyle, .TableStyle {
+  border: 1px solid  darkblue;
+  display: inline-block;
+
+}
+
+
+.Canvas2DStyle {
+  width: 40%;
+
+}
+
+
+.Canvas3DStyle {
+  width: 40%;
+
+}
+
+
+.ControlsStyle {
+
+
+}
+
+
+.TableStyle {
+
+}
+
+
+
+

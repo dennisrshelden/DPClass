@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Projects</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="lib/p5.min.js"></script>
+  <script src="js/globals.js"></script>
+  <script src="lib/utils.js"></script>
+  <script src="lib/datatable.js"></script> <!-- data table library -->
+
+  <script src="lib/elementBaseClasses.js"></script>
+  <script src="js/elementClasses.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body onload="onLoad()" class="menuItem">
+
+  <!------------- DON'T DELETE: Hidden field we need to submit data to server ---------------->
+  <textarea hidden style="width: 200px" id="dataFromFilesId"> </textarea>
+
+  <!------------- DON'T DELETE: Menu ---------------->
+  <iframe src="menu.htm" name="iframe_a" width="100%" style="border:none;" title="Menu"></iframe>
+
+  <!------------- Your code here ---------------->
+  <div align="center">
+
+    <div id="ControlsDIV" class="ControlsStyle">
+      <h3> Controls </h3>
+
+      <h4> Classes </h4>
+      <input type="radio" name="ElementClassButtons" checked onclick="onClassChange('EllipseOnePointElement')">
+      EllipseOnePointElement <br>
+      <input type="radio" name="ElementClassButtons" onclick="onClassChange('HumanElement')"> HumanElement <br>
+      <input type="radio" name="ElementClassButtons" onclick="onClassChange('MultiPointWallElement')">
+      MultiPointWallElement <br>
+      <input type="radio" name="ElementClassButtons" onclick="onClassChange('TwoPointBoxElement')"> TwoPointBoxElement
+      <br>
+
+      <h4> Ambient</h4>
+      <input type="range" min=0 max=255 id="ambientvalue" onchange="onChangeAmbientValue(this.value)"><br>
+    </div>
+
+    <div id="Canvas2DDIV" class="Canvas2DStyle"> </div>
+
+    <div id="Canvas3DDIV" class="Canvas3DStyle"> </div>
+
+    <!-------------------------  Data Table DIV  ---------------------------->
+    <div id="DataTableDIV" class="TableDIVStyle">Some text </div>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
