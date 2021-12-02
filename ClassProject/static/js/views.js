@@ -113,6 +113,8 @@ var sketch2D = function (p5) {
 
   /////////////////////   2D keyPressed() function     ////////////////////////
   p5.keyPressed = function () {
+    if (p5.mouseX < 0 || p5.mouseX > p5.width || p5.mouseY < 0 || p5.mouseY > p5.height) return;  // if we are not in the current view exit
+
     if (p5.keyCode === p5.LEFT_ARROW) {
       for (i = 0; i < _elementList.length; i++) {
         if (_elementList[i].selected) _elementList[i].rotation += p5.PI / 2;
@@ -200,7 +202,7 @@ var sketch3D = function (p5) {
     p5.orbitControl();
 
     //!Class: your 3D draw functionality here
-    p5.background(_ambientVal);
+    p5.background(_ambientVal, _ambientVal, _ambientVal);
 
     // Add lights Lights   
     p5.ambientLight(_ambientVal, _ambientVal, _ambientVal);

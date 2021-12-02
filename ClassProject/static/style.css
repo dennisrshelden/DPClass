@@ -8,7 +8,7 @@ canvas {
 }
 
 
-.Canvas2DStyle, .Canvas3DStyle, .ControlsStyle, .TableStyle {
+.Canvas2DStyle, .Canvas3DStyle, .ControlsStyle, .TableStyle, .FileRWStyle {
   border: 1px solid  darkblue;
   /* position: absolute; */
    width: 500px; 

@@ -1,4 +1,4 @@
-// var _table - defined in globals.js
+// var _table - defined in _globals.js
 
 /// helper functions for deep path like .size.x etc.
 
@@ -31,8 +31,8 @@ function setValue(obj, path, value) {
 
 class DataTable {
 
-    constructor(divID, _BElist, atablespec) {
-        this.list = _BElist;
+    constructor(divID, _elementList, atablespec) {
+        this.list = _elementList;
         this.divid = divID;
         this.tableSpec = atablespec;
     };
@@ -54,7 +54,7 @@ class DataTable {
             var anElement = _elementList[i];
             atext += "<tr>";
 
-            for (var j = 0; j < this.tableSpec.length; j++) {
+            for (var j = 0; j < _tableSpec.length; j++) {
                 var aspec = _tableSpec[j];
                 atext += "<td>";
                 //atext += aspec.type;
@@ -73,7 +73,7 @@ class DataTable {
         }
         atext += "</table>";
         myDiv.innerHTML = atext;
-        console.log(atext);
+        //console.log(atext);
     }
 
     deleteObject(anIndex) {
